@@ -2,7 +2,7 @@ from pymongo import MongoClient, errors
 from bson.objectid import ObjectId
 
 # Підключення до MongoDB
-client = MongoClient('mongodb+srv://bendello123:0oFsuBKLa9KlY1di@bendello.hckgjqk.mongodb.net/?retryWrites=true&w=majority&appName=bendello')
+client = MongoClient('mongodb://localhost:27017/')  # змініть на свій URI, якщо використовуєте MongoDB Atlas
 db = client['cat_database']
 collection = db['cats']
 
